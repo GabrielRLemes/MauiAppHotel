@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreApp"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+        <Frame >
+            <HorizontalStackLayout HorizontalOptions="Center" >
+                <Label Text="Sobre o app:" 
+                       FontSize="20" />
+            </HorizontalStackLayout>
+        </Frame>
+        
+        <Frame >
+            <StackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Desenvolvido por: " />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="10">
+                    <Label Text="Gabriel Rodrigues Lemes" />
+                </HorizontalStackLayout>
+                
+                <HorizontalStackLayout>
+                    <Label Text="Atualizado em: " />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Margin="10" >
+                    <Label Text="2025" />
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center" 
+                Clicked="Button_Clicked" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -50,4 +50,16 @@ public partial class ContratacaoHospedagem : ContentPage
 		dtpck_checkout.MinimumDate = dataSelecionadaCheckin.AddDays(1);
 		dtpck_checkout.MaximumDate = dataSelecionadaCheckin.AddMonths(3);
     }
+
+    private async void Button_Clicked_1(object sender, EventArgs e)
+    {
+		try
+		{
+			await Navigation.PushAsync(new SobreApp());
+		}
+		catch (Exception ex)
+		{
+			await DisplayAlert("Ops", ex.Message, "ok");
+		}
+    }
 }
