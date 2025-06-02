@@ -57,7 +57,7 @@
 
                 <Frame Padding="10"
                        Margin="10" >
-                    <VerticalStackLayout>
+                    <VerticalStackLayout Spacing="10">
                         <Label Text="Periodo da Estadia" />
                         
                         <HorizontalStackLayout>
